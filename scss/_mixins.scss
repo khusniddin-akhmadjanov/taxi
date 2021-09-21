@@ -3,3 +3,30 @@
   margin: 0;
   list-style: none;
 }
+
+@mixin link-unstyled {
+  padding: 0;
+  margin: 0;
+  text-decoration-line: none;
+}
+
+@mixin site-logo {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  text-decoration-line: none;
+}
+
+@mixin site-font-family {
+  font-family: "Montserrat";
+}
+
+//SECTION FOR MEDIA SERVICE
+
+@mixin  breakpoint-down ($screen-width) {
+  
+  @media only screen and (max-width:$screen-width) {
+    @content
+  }
+
+}
