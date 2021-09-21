@@ -1,6 +1,6 @@
 .hero-section-wrapper {
-  padding: 0;
-  margin: 0;
+  padding-top: 50px;
+  background-image: url("../../images/hero-bg.jpg");
 }
 
 .hero__section {
@@ -11,7 +11,9 @@
 .hero {
   padding: 0;
   margin: 0;
-  padding-top: 300px;
+  padding-top: 150px;
+  padding-bottom: 250px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero__box {
@@ -26,15 +28,21 @@
   @include site-font-family;
   padding: 0;
   margin: 0;
+  color: $color-primary-text;
+  font-weight: 700;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 14px;
+  opacity: 60%;
 }
 
 .hero__title {
+  @include site-font-family;
   padding: 0;
   margin: 0;
-  margin-top: 15px;
+  margin-top: 10px;
   font-size: 64px;
+  font-weight: 700;
+  color: $color-secondary-text
 }
 
 .hero__text {
@@ -46,6 +54,8 @@
   width: 450px;
   line-height: 24px;
   margin-bottom: 45px;
+  font-weight: 500;
+  color: $color-primary-text
 }
 
 .hero__button {
@@ -144,6 +154,7 @@
 
 .form__input:focus {
   opacity: 60%;
+  color: #ffffff;
 }
 
 .form__button {
@@ -191,4 +202,96 @@
 .form__button:hover .form__button-img {
   transform: rotateZ(0deg);
   transition: 0.5s ease;
+}
+
+@include breakpoint-down(1000px) {
+  .hero__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .form__section  {
+    padding: 10px 30px;
+    padding-top: 20px;
+    padding-bottom: 45px;
+  }
+  
+  .hero__suptitle {
+    width: 250px;
+  }
+
+  .hero__title {
+    font-size: 48px;
+  }
+
+  .hero__text {
+    width: 350px;
+  }
+
+}
+
+@include breakpoint-down (830px) {
+  .hero__box {
+    display: block;
+  }
+
+  .hero__suptitle {
+    text-align: center;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__title {
+    text-align: center;
+  }
+
+  .hero__text {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form {
+    margin-top: 35px;
+  }
+}
+
+@include breakpoint-down (475px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .hero__suptitle {
+    font-size: 12px;
+  }
+
+  .hero__title {
+    font-size: 32px;
+  }
+  
+  .hero__text {
+    width: 270px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .form__input {
+    width: 280px;
+  }
+}
+
+@include breakpoint-down (359px) {
+  .form {
+    padding: 20px 10px;
+  }
 }
