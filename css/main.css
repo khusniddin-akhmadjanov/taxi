@@ -449,7 +449,10 @@ header {
   padding: 0;
   margin: 0;
   position: fixed;
+  z-index: 999;
   width: 100%;
+  -webkit-box-shadow: 0px 5px 10px #fcde6c;
+          box-shadow: 0px 5px 10px #fcde6c;
 }
 
 .header-section {
@@ -461,7 +464,6 @@ header {
 .header {
   padding: 0;
   margin: 0;
-  padding: 18px 0;
 }
 
 .header__nav {
@@ -488,6 +490,10 @@ header {
   color: #ffdf6c;
   font-weight: 900;
   font-size: 32px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 9px;
 }
 
 .header__list {
@@ -765,7 +771,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 150px;
+  width: 170px;
   height: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -897,6 +903,209 @@ header {
 @media only screen and (max-width: 359px) {
   .form {
     padding: 20px 10px;
+  }
+}
+
+.info-section {
+  margin-top: 250px;
+  margin-bottom: 250px;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.info__left {
+  position: relative;
+}
+
+.info__left-img {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+
+.info__left:hover .info__left-img {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+.info__title {
+  font-family: "Montserrat";
+  padding: 0;
+  margin: 0;
+  width: 450px;
+  color: #202020;
+  font-weight: 300;
+  font-size: 48px;
+}
+
+.info__subtitle {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  color: #3f3f3f;
+}
+
+.info__text {
+  font-family: "Montserrat";
+  width: 380px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 18px;
+  color: #3f3f3f;
+  font-weight: 300;
+  margin-bottom: 45px;
+}
+
+.info__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 170px;
+  height: 50px;
+  padding: 10px 15px;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  background-color: #ffdf6c;
+}
+
+.info__button-text {
+  font-family: "Montserrat";
+  padding: 0;
+  margin: 0;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  text-decoration-line: none;
+  color: #202020;
+  margin-right: 10px;
+}
+
+.info__button:hover {
+  background-color: #202020;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.info__button:hover .info__button-text {
+  color: #ffdf6c;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+.info__button:hover svg {
+  fill: #ffdf6c;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+
+@media only screen and (max-width: 1250px) {
+  .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .info__left-img {
+    width: 520px;
+    height: 325px;
+  }
+  .info__title {
+    font-size: 36px;
+  }
+  .info__subtitle {
+    font-size: 20px;
+  }
+  .info__text {
+    margin-bottom: 35px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .info__left-img {
+    width: 416px;
+    height: 260px;
+  }
+  .info__title {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 976px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+  .info__left-img {
+    width: 520px;
+    height: 325px;
+  }
+  .info__title {
+    margin: 0;
+    padding: 0;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    font-size: 36px;
+  }
+  .info__subtitle {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+  }
+  .info__text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .info__button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .info__title {
+    width: 450px;
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .info__title {
+    width: 350px;
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .info__title {
+    width: 290px;
+  }
+  .info__text {
+    font-size: 12px;
+    width: 300px;
   }
 }
 /*# sourceMappingURL=main.css.map */
