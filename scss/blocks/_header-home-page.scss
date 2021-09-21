@@ -44,12 +44,8 @@ header {
   text-transform: uppercase;
 }
 
-.header__link ~ .header__link {
+.header__item ~ .header__item {
   margin-left: 36px;
-}
-
-.header__menu-icon svg{
-  display: none;
 }
 
 .header__link {
@@ -58,15 +54,57 @@ header {
   color: $color-primary-text;
 }
 
+.header__menu-icon {
+  display: none;
+  position: relative;
+  top: 3px;
+}
+
+.header__item {
+  @include link-unstyled;
+  @include site-font-family;
+  color: $color-primary-text;
+}
+
+.header__link:hover {
+  color: $color-secondary-text;
+  transition: 0.3s ease;
+}
+
+.header__item:hover {
+  transition: 0.3s ease;
+  transform: translateY(-5px);
+}
+
+.header__item:active {
+  opacity: 60%;
+}
+
 @include breakpoint-down (940px) {
-  .header__link ~ .header__link {
-    margin-left: 32px;
+  .header__item ~ .header__item {
+    margin-left: 24px;
     color: red;
   }
 }
 
-@include breakpoint-down (760px) {
-  .header__link ~ .header__link {
-    margin-left: 24px;
+@include breakpoint-down (790px) {
+  .header__item ~ .header__item {
+    margin-left: 12px;
+  }
+}
+
+@include breakpoint-down (720px) {
+  .header__item {
+    font-size: 14px;
+  } 
+}
+
+@include breakpoint-down (660px) {
+  .header__list {
+    display: none;
+  }
+
+  .header__menu-icon {
+    display: block;
   }
 }

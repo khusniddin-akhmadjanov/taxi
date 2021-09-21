@@ -1,0 +1,194 @@
+.hero-section-wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+.hero__section {
+  padding: 0;
+  margin: 0;
+}
+
+.hero {
+  padding: 0;
+  margin: 0;
+  padding-top: 300px;
+}
+
+.hero__box {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero__suptitle {
+  @include site-font-family;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.hero__title {
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+  font-size: 64px;
+}
+
+.hero__text {
+  @include site-font-family;
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+  margin-top: 15px;
+  width: 450px;
+  line-height: 24px;
+  margin-bottom: 45px;
+}
+
+.hero__button {
+  @include link-unstyled;
+  display: flex;
+  width: 170px;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: $color-secondary-text;
+}
+
+.hero__button-image {
+  display: none;
+  margin-left: 120px;
+  transition: 0.3s ease;
+}
+
+.hero__button-text {
+  padding: 0;
+  margin: 0;
+  color: $color-primary-back;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.hero__button svg {
+  padding: 0;
+  margin: 0;
+}
+
+.hero__button:hover {
+  transition: 0.3s ease;
+  background-color: $color-primary-back;
+}
+
+.hero__button:hover .hero__button-text {
+  transform: translateX(50px);
+  color: $color-secondary-text;
+  transition: 0.3s ease;
+}
+
+.hero__button:hover svg {
+  fill: $color-secondary-text;
+  transition: 0.3s ease;
+  transform: translateX(-105px);
+}
+
+.hero__button:active .hero__button-text{
+  display: none;
+}
+
+.hero__button:active svg {
+  display: none;
+}
+
+.hero__button:active .hero__button-image{
+  display: block;
+  transform: translateX(-65px);
+}
+
+.form__section  {
+  background-color: $color-secondary-text;
+  padding: 10px 50px;
+  padding-top: 50px;
+  padding-bottom: 65px;
+}
+
+.form {
+  margin: 0;
+  text-align: center;
+}
+
+.form__title {
+  @include site-font-family;
+  color: $color-primary-back;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.form__item {
+  margin-bottom: 10px;
+}
+
+.form__input {
+  width: 310px;
+  padding: 10px 20px;
+  color: $color-secondary-back;
+  background-color: $color-primary-back;
+  border: none;
+  outline: none;
+}
+
+.form__input:focus {
+  opacity: 60%;
+}
+
+.form__button {
+  @include site-font-family;
+  display: flex;
+  width: 150px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: $color-primary-back;
+  position: relative;
+}
+
+.form__button-text {
+  padding: 0;
+  margin: 0;
+  padding: 0 20px;
+  color: $color-secondary-text;
+}
+
+.form__button-img {
+  position: absolute;
+  left: 50px;
+  transform: rotateZ(90deg) translateY(-55px) scale(0.5);
+  padding: 0;
+  margin: 0;
+}
+
+.form__button:hover {
+  background-color: rgba(32, 32, 32, 0.5);
+  transition: 0.3s ease;
+  border: 1px solid $color-primary-back;
+}
+
+.form__button:hover .form__button-text {
+  display: none;
+  transition: 0.5s ease;
+}
+
+.form__button:hover .form__button-img {
+  transform: rotateZ(0deg);
+  transition: 0.5s ease;
+}
