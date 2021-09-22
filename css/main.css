@@ -1669,6 +1669,10 @@ header {
   margin-left: 50px;
 }
 
+.client__marks svg:hover {
+  fill: #ffdf6c;
+}
+
 @media only screen and (max-width: 1551px) {
   .cards {
     text-align: center;
@@ -2228,7 +2232,7 @@ footer {
 }
 
 .footer__last-text-colorful {
-  color: #ffdf6c;
+  color: #129932;
 }
 
 @media only screen and (max-width: 555px) {

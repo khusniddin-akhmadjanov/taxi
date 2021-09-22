@@ -137,6 +137,10 @@
   margin-left: 50px;
 }
 
+.client__marks svg:hover {
+  fill: $color-secondary-text;
+}
+
 @include breakpoint-down (1551px) {
   .cards {
     text-align: center;
