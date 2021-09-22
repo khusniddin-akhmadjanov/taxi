@@ -1,0 +1,79 @@
+.hero__title-about {
+  @include site-font-family;
+  font-size: 64px;
+  text-align: center;
+  font-weight: 500;
+  color: $color-primary-text;
+}
+
+.hero-about-section-wrapper {
+  padding-top: 50px;
+  background-image: url("../../images/hero-bg.jpg");
+}
+
+.hero__about-section {
+  padding: 0;
+  margin: 0;
+}
+
+.hero-about {
+  padding: 0;
+  margin: 0;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap');
+
+
+.black-lives-matter {
+  @include site-font-family;
+  font-size: 128px;
+  line-height: 8vw;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 900;
+  background: url("../../images/img-4.jpg");
+  background-size: 40%;
+  background-position: 50% 50%;
+  -webkit-background-clip: text;
+  color: rgba(0,0,0,0.08);
+  animation: zoomout 10s ease 500ms forwards;
+}
+
+@keyframes zoomout {
+  from {
+    background-size: 40%;
+  }
+  to {
+    background-size: 10%;
+  }
+}
+
+
+@include breakpoint-down (1000px) {
+  .black-lives-matter {
+    font-size: 96px;
+  }
+}
+
+@include breakpoint-down (690px) {
+  .black-lives-matter {
+    font-size: 64px;
+  }
+}
+
+@include breakpoint-down (492px) {
+  .black-lives-matter {
+    font-size: 48px;
+  }
+}
+
+@include breakpoint-down (340px) {
+  .black-lives-matter {
+    font-size: 32px;
+  }
+}

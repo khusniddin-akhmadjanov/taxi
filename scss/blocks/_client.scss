@@ -122,6 +122,10 @@
   margin-top: 200px;
 }
 
+.client__card {
+  width: 270px;
+}
+
 .client__text {
   @include site-font-family;
   font-size: 18px;

@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("");
+@import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -1654,6 +1655,10 @@ header {
   margin-top: 200px;
 }
 
+.client__card {
+  width: 270px;
+}
+
 .client__text {
   font-family: "Montserrat";
   font-size: 18px;
@@ -2245,6 +2250,92 @@ footer {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+.hero__title-about {
+  font-family: "Montserrat";
+  font-size: 64px;
+  text-align: center;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.hero-about-section-wrapper {
+  padding-top: 50px;
+  background-image: url("../../images/hero-bg.jpg");
+}
+
+.hero__about-section {
+  padding: 0;
+  margin: 0;
+}
+
+.hero-about {
+  padding: 0;
+  margin: 0;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.black-lives-matter {
+  font-family: "Montserrat";
+  font-size: 128px;
+  line-height: 8vw;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 900;
+  background: url("../../images/img-4.jpg");
+  background-size: 40%;
+  background-position: 50% 50%;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0.08);
+  -webkit-animation: zoomout 10s ease 500ms forwards;
+          animation: zoomout 10s ease 500ms forwards;
+}
+
+@-webkit-keyframes zoomout {
+  from {
+    background-size: 40%;
+  }
+  to {
+    background-size: 10%;
+  }
+}
+
+@keyframes zoomout {
+  from {
+    background-size: 40%;
+  }
+  to {
+    background-size: 10%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .black-lives-matter {
+    font-size: 96px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .black-lives-matter {
+    font-size: 64px;
+  }
+}
+
+@media only screen and (max-width: 492px) {
+  .black-lives-matter {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .black-lives-matter {
+    font-size: 32px;
   }
 }
 /*# sourceMappingURL=main.css.map */
