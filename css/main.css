@@ -450,7 +450,7 @@ header {
   padding: 0;
   margin: 0;
   position: fixed;
-  z-index: 999;
+  z-index: 10000;
   width: 100%;
   -webkit-box-shadow: 0px 5px 10px #fcde6c;
           box-shadow: 0px 5px 10px #fcde6c;
@@ -459,7 +459,7 @@ header {
 .header-section {
   padding: 0;
   margin: 0;
-  background-color: #202020;
+  background-color: #000000;
 }
 
 .header {
@@ -1526,6 +1526,7 @@ header {
   margin: 4rem 5vw;
   padding: 0;
   list-style-type: none;
+  margin-bottom: 200px;
 }
 
 .card {
@@ -1644,7 +1645,7 @@ header {
   text-align: center;
   padding: 0;
   margin: 0;
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 .client__text {
@@ -1835,14 +1836,14 @@ header {
 }
 
 .container .news__card:after {
-  content: 'Nike';
+  content: 'hey taxi';
   position: absolute;
   top: 30%;
-  left: -20%;
-  font-size: 12em;
+  left: 20%;
+  font-size: 96px;
   font-weight: 800;
   font-style: italic;
-  color: rgba(255, 255, 25, 0.05);
+  color: rgba(245, 245, 12, 0.3);
 }
 
 .container .news__card .imgBx {
@@ -1850,7 +1851,7 @@ header {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  z-index: 10000;
+  z-index: 0;
   width: 100%;
   height: 220px;
   -webkit-transition: 0.5s;
@@ -1880,7 +1881,7 @@ header {
   text-align: center;
   -webkit-transition: 1s;
   transition: 1s;
-  z-index: 10;
+  z-index: 1;
 }
 
 .container .news__card:hover .contentBx {
@@ -2049,5 +2050,141 @@ header {
   font-weight: 300;
   margin-bottom: 10px;
   color: #ffffff;
+}
+
+footer {
+  background-color: #000000;
+  padding: 0;
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  margin-top: 300px;
+}
+
+.footer-section {
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer__item {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer__title {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer__list-item {
+  margin-bottom: 15px;
+}
+
+.footer__link {
+  font-family: "Montserrat";
+  padding: 0;
+  margin: 0;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #3f3f3f;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.footer__social-item ~ .footer__social-item {
+  margin-left: 30px;
+}
+
+.footer__social-media-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__link svg {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
+
+.footer__link:hover svg {
+  fill: #ffdf6c;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.footer__link:hover {
+  color: #ffdf6c;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.footer__link ~ .footer__link {
+  margin-left: 30px;
+}
+
+.footer__last-text {
+  font-family: "Montserrat";
+  font-weight: 300;
+  color: #3f3f3f;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.footer__last-text img {
+  position: relative;
+  top: 5px;
+  margin: 0 5px;
+}
+
+.footer__last-text-colorful {
+  color: #ffdf6c;
+}
+
+@media only screen and (max-width: 555px) {
+  .footer {
+    display: block;
+    text-align: center;
+  }
+  .footer__social-media-list {
+    width: 190px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */
