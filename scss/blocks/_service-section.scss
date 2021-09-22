@@ -127,12 +127,20 @@
     width: 264px;
     padding-top: 124px;
   }
+
+  .service__title {
+    font-size: 42px;
+  }
 }
 
 @include breakpoint-down (900px) {
   .service {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .service__title {
+    font-size: 36px;
   }
 
   .service__card {
@@ -155,5 +163,9 @@
 
   .service__text {
     margin-bottom: 0;
+  }
+
+  .service__title {
+    font-size: 28px;
   }
 }
