@@ -527,6 +527,12 @@ header {
   color: #ffffff;
 }
 
+.header__link-active {
+  color: #fcde6c;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ffdf6c;
+}
+
 .header__menu-icon {
   display: none;
   position: relative;
@@ -1661,6 +1667,12 @@ header {
 
 .client__marks {
   margin-left: 50px;
+}
+
+@media only screen and (max-width: 1551px) {
+  .cards {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 354px) {

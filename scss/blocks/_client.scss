@@ -137,6 +137,13 @@
   margin-left: 50px;
 }
 
+@include breakpoint-down (1551px) {
+  .cards {
+    text-align: center;
+  }
+
+}
+
 @include breakpoint-down (354px) {
   .card__image {
     width: 270px;
