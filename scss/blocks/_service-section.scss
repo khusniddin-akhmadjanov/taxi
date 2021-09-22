@@ -1,0 +1,159 @@
+.service-section-wrapper {
+  padding-bottom: 150px;
+}
+
+.service-section {
+  padding: 0;
+  margin: 0;
+}
+
+.service__title {
+  @include site-font-family;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 500;
+  color: $color-primary-back;
+  text-align: center;
+}
+
+.service__text {
+  @include site-font-family;
+  font-weight: 300;
+  font-size: 32px;
+  color: $color-secondary-back;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.service__card {
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+}
+
+.service__card-img {
+  width: 330px;
+  height: 420px;
+}
+
+.service__card-title {
+  @include site-font-family;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 24px;
+  color: $color-secondary-text;
+}
+
+.service__card-text {
+  @include site-font-family;
+  padding: 0;
+  margin: 0;
+  color: $color-primary-text;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
+
+.service__card-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $color-secondary-text;
+  width: 170px;
+  height: 50px;
+  text-decoration-line: none;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -20px;
+}
+
+.service__card-link-text {
+  @include site-font-family;
+  @include link-unstyled;
+  color: $color-primary-back;
+}
+
+.service__card-box {
+  width: 330px;
+  transform: scale(0.0001);
+  position: absolute;
+  top: 0;
+  text-align: center;
+  padding-top: 144px;
+}
+
+.service__card:hover .service__card-box {
+  display: block;
+  transition: 0.5s ease;
+  background-color: rgba(10, 10, 10, 0.7);
+  transform: scale(1);
+}
+
+.service__card-link:hover {
+  background-color: $color-primary-back;
+  transition: 0.3s ease;
+  border: 1px solid $color-primary-text ;
+}
+
+.service__card-link:hover .service__card-link-text {
+  color: $color-secondary-text;
+  transition: 0.3s ease;
+}
+
+.service__card-link:hover svg {
+  fill: $color-secondary-text;
+  transition: 0.3s ease;
+}
+
+@include breakpoint-down (1150px) {
+  .service__card{
+    width: 264px;
+    height: 300px;
+  }
+
+  .service__card-box {
+    width: 264px;
+    padding-top: 124px;
+  }
+}
+
+@include breakpoint-down (900px) {
+  .service {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .service__card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+  }
+}
+
+@include breakpoint-down (550px) {
+  .service__card{
+    width: 300px;
+    height: 300px;
+  }
+
+  .service__card-box {
+    width: 300px;
+    padding-top: 144px;
+  }
+
+  .service__text {
+    margin-bottom: 0;
+  }
+}
