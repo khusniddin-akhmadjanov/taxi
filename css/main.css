@@ -1803,6 +1803,50 @@ header {
   }
 }
 
+@media only screen and (max-width: 650px) {
+  .bonus__text {
+    width: 400px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bonus__text {
+    width: 350px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .bonus__text {
+    width: 300px;
+    text-align: center;
+  }
+  .bonus {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .bonus__text {
+    width: 280px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .bonus__title {
+    width: 280px;
+    font-size: 32px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bonus {
+    padding: 0;
+  }
+  .bonus__section-wrapper {
+    padding: 0;
+  }
+}
+
 .container {
   position: relative;
 }
