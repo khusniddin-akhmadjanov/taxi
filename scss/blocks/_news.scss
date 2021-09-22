@@ -1,0 +1,225 @@
+@import url('');
+
+
+.container{
+  position: relative;
+}
+
+.container .news__card{
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container .news__car:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #9bdc28;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container .news__card:hover:before{
+  clip-path: circle(300px at 80% -20%);
+}
+
+.container .news__card:after{
+  content: 'Nike';
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255,255,25,0.05)
+}
+
+.container .news__card .imgBx{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.container .news__card:hover .imgBx{
+  top: 0%;
+  transform: translateY(0%);
+    
+}
+
+.container .news__card .imgBx img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+  width: 270px;
+}
+
+.container .news__card .contentBx{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.container .news__card:hover .contentBx{
+  height: 210px;
+}
+
+.container .news__card .contentBx h2{
+  @include site-font-family;
+  position: relative;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: $color-primary-text;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.container .news__card .contentBx .size, .container .news__card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;opacity: 0;
+  visibility: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.container .news__card:hover .contentBx .size{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+  display: block;
+}
+
+.container .news__card:hover .contentBx .color{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.container .news__card:hover .contentBx .color:nth-child(2){
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+  margin-bottom: 40px;
+}
+
+.container .news__card .contentBx .size h3, .container .news__card .contentBx .color h3{
+  @include site-font-family;
+  color: $color-primary-text;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.container .news__card .contentBx .size span{
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.container .news__card .contentBx .color span{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 5px;
+  color: $color-secondary-text;
+  cursor: pointer;
+}
+
+
+.container .news__card .contentBx a{
+  @include site-font-family;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: $color-secondary-text;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  color: $color-primary-back;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+  margin-top: 0;
+}
+
+.container .news__card:hover .contentBx a{
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.75s;
+  
+}
+
+.news__title {
+  @include site-font-family;
+  font-size: 48px;
+  font-weight: 500;
+  color: $color-primary-back;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.news__card { 
+  margin-bottom: 20px;
+}
+
+.news__text {
+  @include site-font-family;
+  font-size: 18px;
+  color: $color-secondary-back;
+  font-weight: 300;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.news__card-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.news__size-text {
+  @include site-font-family;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  color: $color-primary-text;
+}
+

@@ -1,0 +1,115 @@
+.bonus__section-wrapper {
+  padding: 0;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.9) ;
+  background-image: url("../../images/taxi-bonus.png") ;
+  background-position: calc(50% + 450px);
+  background-repeat: no-repeat;
+}
+
+.bonus {
+  display: block;
+  padding: 50px ;
+}
+
+.bonus__title {
+  @include site-font-family;
+  padding: 0;
+  margin: 0;
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  background: -webkit-linear-gradient(90deg,rgb(255, 230, 10), rgb(255, 255, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bonus__text {
+  @include site-font-family;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: justify;
+    background: -webkit-linear-gradient(90deg,rgb(255, 230, 10), rgb(255, 255, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 450px;
+  line-height: 23px;
+}
+
+.bonus__link {
+  width: 170px;
+  height: 50px;
+  background-color: $color-secondary-text;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration-line: none;
+  margin-top: 40px;
+}
+
+.bonus__link-text {
+  @include site-font-family;
+  font-size: 16px;
+  color: $color-primary-back;
+}
+
+.bonus__link:hover {
+  background-color: $color-primary-back;
+  color: $color-secondary-text;
+  border: 1px solid $color-secondary-text ;
+  transition: 0.3s ease;
+}
+
+.bonus__link:hover .bonus__link-text {
+  color: $color-secondary-text;
+  transition: 0.3s ease;
+}
+
+@include breakpoint-down (1570px) {
+  .bonus__section-wrapper {
+    padding: 0;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.9) ;
+    background-image: url("../../images/taxi-bonus.png") ;
+    background-position: calc(50% + 250px);
+    background-repeat: no-repeat;
+  }
+}
+
+@include breakpoint-down (1250px) {
+  .bonus__box {
+    text-align: center;
+    padding-bottom: 130px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .bonus__text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .bonus__section-wrapper {
+    padding: 0;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.9) ;
+    background-image: url("../../images/taxi-bonus.png") ;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .bonus__link {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
