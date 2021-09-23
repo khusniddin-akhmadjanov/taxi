@@ -2421,11 +2421,16 @@ footer {
   text-align: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 10px 0;
   border-bottom: 1px solid #3f3f3f;
 }
 
 .contact__left-item-text {
   font-family: "Montserrat";
+  padding: 0;
+  margin: 0;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
   font-size: 18px;
   color: #202020;
   font-weight: 500;
@@ -2802,5 +2807,82 @@ input:focus {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.news-page__wrapper {
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+
+.news-page__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.news-page__item {
+  font-family: "Montserrat";
+  width: 350px;
+  height: 400px;
+  padding: 15px 35px;
+  border-radius: 25px;
+  margin-top: 50px;
+  text-align: center;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center 85%;
+  background-color: #202020;
+  background-image: url("../../images/road.png");
+}
+
+.news-page__image {
+  margin-bottom: 10px;
+}
+
+.news-page__title {
+  font-family: "Montserrat";
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.news-page__text {
+  font-family: "Montserrat";
+  font-size: 16px;
+  text-align: justify;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.news-page__item:hover .news-page__title {
+  display: block;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+.news-page__item:hover .news-page__text {
+  display: none;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.news-page__item:hover .news-page__image {
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transform: translateY(200px) scale(2);
+          transform: translateY(200px) scale(2);
 }
 /*# sourceMappingURL=main.css.map */

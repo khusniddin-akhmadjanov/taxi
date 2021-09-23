@@ -59,11 +59,13 @@
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
+  padding: 10px 0;
   border-bottom: 1px solid $color-secondary-back;
 }
 
 .contact__left-item-text {
   @include site-font-family;
+  @include link-unstyled;
   font-size: 18px;
   color: $color-primary-back;
   font-weight: 500;

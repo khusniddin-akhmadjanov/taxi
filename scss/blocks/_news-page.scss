@@ -1,0 +1,63 @@
+.news-page__wrapper {
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+
+.news-page__list {
+@include list-unstyled;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.news-page__item {
+  @include site-font-family;
+  width: 350px;
+  height: 400px;
+  padding: 15px 35px;
+  border-radius: 25px;
+  margin-top: 50px;
+  text-align: center;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center 85%;
+  background-color: $color-primary-back;
+  background-image: url("../../images/road.png");
+}
+
+.news-page__image {
+  margin-bottom: 10px;
+}
+
+.news-page__title {
+  @include site-font-family;
+  font-size: 22px;
+  font-weight: 700;
+  color: $color-primary-text
+}
+
+.news-page__text {
+  @include site-font-family;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 22px;
+  color: $color-primary-text;
+}
+
+.news-page__item:hover .news-page__title {
+  display: block;
+  transform: translateY(-100px);
+  transition: 0.5s ease-in;
+}
+
+.news-page__item:hover .news-page__text {
+  display: none;
+  transition: 0.3s ease-in;
+}
+
+.news-page__item:hover .news-page__image {
+  transition: 0.5s ease-in;
+  transform: translateY(200px) scale(2);
+}
