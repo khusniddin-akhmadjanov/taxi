@@ -10,6 +10,7 @@
 .contact {
   margin-bottom: 200px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   background-image: url("../../images/form-bg.png");
@@ -46,6 +47,30 @@
   height: 20px;
   margin-right: 100px;
 }
+
+.contact__left-list {
+  @include list-unstyled;
+  position: relative;
+  top: -250px;
+}
+
+.contact__left-item {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $color-secondary-back;
+}
+
+.contact__left-item-text {
+  @include site-font-family;
+  font-size: 18px;
+  color: $color-primary-back;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+
 
 //map section
 
@@ -266,6 +291,7 @@ transition: 0.3s ease-in;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
   }
 
   .contact__sign-with {
@@ -334,6 +360,15 @@ transition: 0.3s ease-in;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+  }
+
+  .contact__left-item-text {
+    font-size: 14px;
+  }
+
+  .contact__left-list {
+    position: relative;
+    top: -150px;
   }
 
   .contact-section {
@@ -408,4 +443,17 @@ transition: 0.3s ease-in;
     width: 280px;
   }
 
+}
+
+@include breakpoint-down (893px) {
+  .contact__left-list {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact__left {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
