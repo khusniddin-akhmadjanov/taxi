@@ -5,13 +5,15 @@
 
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 4rem 5vw;
-  padding: 0;
-  list-style-type: none;
-  margin-bottom: 200px;
+  @include list-unstyled;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card {
@@ -21,11 +23,16 @@
   border-radius: calc(var(--curve) * 1px);
   overflow: hidden;
   text-decoration: none;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .card__image {      
-  width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card__overlay {
@@ -38,6 +45,8 @@
   background-color: var(--surface-color);      
   transform: translateY(100%);
   transition: .2s ease-in-out;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card:hover .card__overlay {

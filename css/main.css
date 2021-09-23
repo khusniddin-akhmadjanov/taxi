@@ -1525,15 +1525,22 @@ header {
 }
 
 .cards {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 4rem 5vw;
   padding: 0;
-  list-style-type: none;
-  margin-bottom: 200px;
+  margin: 0;
+  list-style: none;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .card {
@@ -1543,11 +1550,16 @@ header {
   border-radius: calc(var(--curve) * 1px);
   overflow: hidden;
   text-decoration: none;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .card__image {
-  width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card__overlay {
@@ -1562,6 +1574,8 @@ header {
           transform: translateY(100%);
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card:hover .card__overlay {
