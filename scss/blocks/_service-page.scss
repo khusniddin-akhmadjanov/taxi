@@ -1,0 +1,109 @@
+.service-page-section-wrapper {
+  margin-top: 150px;
+  padding: 100px 0;
+  background: linear-gradient(#a1f2d9, #46d4e4);
+}
+
+.service-page-section {
+  text-align: center
+}
+
+.service-page__list {
+  @include list-unstyled;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 50px 100px;
+}
+
+.service-page__list-item {
+  width: 290px;
+  height: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  background-color: transparent;
+  border: 2px solid #f1f1f1;
+  padding: 10px 15px;
+  padding-top: 25px;
+}
+
+.service-page__list-img {
+  fill: $color-primary-text;
+}
+
+.service-page__list-title {
+  @include site-font-family;
+  font-size: 24px;
+  font-weight: 300;
+  color: $color-primary-text;
+  text-transform: uppercase;
+}
+
+.service-page__list-text {
+  @include site-font-family;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  color: $color-primary-text;
+}
+
+.service-page__list-link {
+  @include site-font-family;
+  @include link-unstyled;
+  font-size: 16px;
+  color: $color-primary-back;
+}
+
+
+
+.service__button-box {
+  width: 170px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(239, 242, 242);
+  text-align: center;
+  padding-top: 18px;
+  transform: scale(0.01);
+}
+
+.service-page__list-item:hover .service-page__list-text{
+  display: none;
+  transition: all 0.3s ease-in;
+}
+
+.service-page__list-item:hover .service-page__list-title{
+  transition: all 0.3s ease-in;
+  transform: translateY(40px);
+}
+
+.service-page__list-item:hover .service-page__list-img{
+  transition: all 1s ease-in;
+  transform: translateY(30px) scale(1.3);
+}
+
+
+.service-page__list-item:hover .service__button-box {
+  transition: all 1s ease-in;
+  transform: translateY(30px) scale(1);
+}
+
+@include breakpoint-down (560px) {
+  .service-page__list-text {
+    font-size: 12px;
+  }
+
+  .service-page__list-title {
+    font-size: 14px;
+  } 
+}
+
+@include breakpoint-down (400px) {
+  .service-page__list {
+    padding: 0;
+  }
+
+}
