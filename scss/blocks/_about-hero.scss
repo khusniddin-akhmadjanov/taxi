@@ -72,6 +72,13 @@
   }
 }
 
+@include breakpoint-down(390px) {
+  .hero-about-section-wrapper {
+    position: relative;
+    top: -120px;
+  }
+}
+
 @include breakpoint-down (340px) {
   .black-lives-matter {
     font-size: 32px;
