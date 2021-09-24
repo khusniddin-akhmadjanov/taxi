@@ -29,15 +29,15 @@ header {
 //HEADER HIDDEN MENU
 
 .header__hidden-section {
-  position: fixed;
   width: 100%;
   z-index: 1000;
   padding: 0;
   margin: 0;
-  background-color: $color-secondary-back;
+  background-color: $color-primary-back;
   transform: translateY(-200px);
   transition: all .3s ease;
   padding: 20px 0;
+  display: none;
 
   &.active {
     transform: translateY(70px);
@@ -76,6 +76,12 @@ header {
   font-size: 16px;
 }
 
+
+.header__hidden__link:hover {
+  color: #fcde6c;
+  transform: translateY(-10px);
+  transition: all .3s ease;
+}
 
 .site-logo {
   @include site-logo;
@@ -170,6 +176,10 @@ header {
   .header__menu-icon {
     display: block;
   }
+
+  .header__hidden-section  {
+    display: block;
+  }
 }
 
 @include breakpoint-down (390px) {
@@ -181,10 +191,31 @@ header {
     text-align: center;
   }
 
+  .header__hidden-menu{
+    padding: 0;
+    margin: 0;
+  }
+
+  .header__hidden__link {
+    padding: 0;
+    margin: 0;
+  }
+
   .header__hidden__item {
     padding: 0;
     margin: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .header__hidden__item:nth-child(1) {
+    margin-left: 30px;
+  }
+
+  .hero-section-wrapper  {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -120px;
   }
 }

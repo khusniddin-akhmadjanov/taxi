@@ -36,9 +36,11 @@
             <li class="header__item"><a class="header__link" href="index-contact.html">Contact</a></li>
           </ul>
           <div class="header__menu-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 0 24 24" width="32px" fill="#ffffff">
-              <path d="M0 0h24v24H0V0z" fill="none" />
-              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
+            <button type="button" id="toggleMenuBtn" class="header__hidden-button">
+              <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 0 24 24" width="32px" fill="#ffffff">
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
+            </button>
           </div>
         </div>
       </div>
@@ -47,7 +49,7 @@
   <div class="header__hidden-section active" id="hiddenMenu">
     <div class="header__hidden-menu container">
       <ul class="header__hidden__list">
-        <li class="header__hidden__item"><a class="header__hidden__link" href="index.html">Home</a></li>
+        <li class="header__hidden__item"><a class="header__hidden__link header__hidden__link-active" href="index.html">Home</a></li>
         <li class="header__hidden__item"><a class="header__hidden__link" href="index-about.html">About</a></li>
         <li class="header__hidden__item"><a class="header__hidden__link" href="news.html">News</a></li>
         <li class="header__hidden__item"><a class="header__hidden__link" href="service.html">Service</a></li>
@@ -248,6 +250,9 @@
   </footer>
 
   <!-- ====== FOOTER ====== -->
+  <script src="./js/main.js">
+
+  </script>
 </body>
 
 </html>

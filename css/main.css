@@ -483,17 +483,17 @@ header {
 }
 
 .header__hidden-section {
-  position: fixed;
   width: 100%;
   z-index: 1000;
   padding: 0;
   margin: 0;
-  background-color: #3f3f3f;
+  background-color: #202020;
   -webkit-transform: translateY(-200px);
           transform: translateY(-200px);
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   padding: 20px 0;
+  display: none;
 }
 
 .header__hidden-section.active {
@@ -538,6 +538,14 @@ header {
   color: #ffffff;
   font-weight: 500;
   font-size: 16px;
+}
+
+.header__hidden__link:hover {
+  color: #fcde6c;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .site-logo {
@@ -651,6 +659,9 @@ header {
   .header__menu-icon {
     display: block;
   }
+  .header__hidden-section {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 390px) {
@@ -660,11 +671,28 @@ header {
     margin: 0;
     text-align: center;
   }
+  .header__hidden-menu {
+    padding: 0;
+    margin: 0;
+  }
+  .header__hidden__link {
+    padding: 0;
+    margin: 0;
+  }
   .header__hidden__item {
     padding: 0;
     margin: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .header__hidden__item:nth-child(1) {
+    margin-left: 30px;
+  }
+  .hero-section-wrapper {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -120px;
   }
 }
 
@@ -2998,8 +3026,8 @@ input:focus {
 .service-page-section-wrapper {
   margin-top: 150px;
   padding: 100px 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#a1f2d9), to(#46d4e4));
-  background: linear-gradient(#a1f2d9, #46d4e4);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#4d4d4d));
+  background: linear-gradient(#f7f7f7, #4d4d4d);
 }
 
 .service-page-section {
@@ -3035,6 +3063,8 @@ input:focus {
   border: 2px solid #f1f1f1;
   padding: 10px 15px;
   padding-top: 25px;
+  -webkit-box-shadow: -2px -1px 8px 5px rgba(0, 0, 0, 0.62);
+  box-shadow: -2px -1px 8px 5px rgba(0, 0, 0, 0.62);
 }
 
 .service-page__list-img {

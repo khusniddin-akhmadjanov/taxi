@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taxi</title>
+  <title>News</title>
   <link rel="stylesheet" href="./css/main.min.css">
   <link rel="shotcut icon" href="./images/taxi.svg">
 </head>
@@ -30,9 +30,11 @@
             <li class="header__item"><a class="header__link" href="index-contact.html">Contact</a></li>
           </ul>
           <div class="header__menu-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 0 24 24" width="32px" fill="#ffffff">
-              <path d="M0 0h24v24H0V0z" fill="none" />
-              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
+            <button type="button" id="toggleMenuBtn" class="header__hidden-button">
+              <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 0 24 24" width="32px" fill="#ffffff">
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
+            </button>
           </div>
         </div>
       </div>
@@ -278,8 +280,11 @@
       <p class="footer__last-text">Copyright ©2021 All rights reserved | Developer by <span class="footer__last-text-colorful"> Inlab</span><img src="./images/taxi.svg" alt="taxi image" width="24" height="24"></p>
     </div>
   </footer>
-
+ 
   <!-- ====== FOOTER ====== -->
+  <script src="./js/main.js">
+
+  </script>
 </body>
 
 </html>
