@@ -482,6 +482,64 @@ header {
           align-items: center;
 }
 
+.header__hidden-section {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+  background-color: #3f3f3f;
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  padding: 20px 0;
+}
+
+.header__hidden-section.active {
+  -webkit-transform: translateY(70px);
+          transform: translateY(70px);
+}
+
+.header__hidden-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.header__hidden-button:active svg {
+  fill: #fcde6c;
+}
+
+.header__hidden__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header__hidden__item ~ .header__hidden__item {
+  margin-left: 30px;
+}
+
+.header__hidden__link {
+  font-family: "Montserrat";
+  padding: 0;
+  margin: 0;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+}
+
 .site-logo {
   padding: 0;
   margin: 0;
@@ -537,6 +595,7 @@ header {
 .header__menu-icon {
   display: none;
   position: relative;
+  cursor: pointer;
   top: 3px;
 }
 
@@ -591,6 +650,21 @@ header {
   }
   .header__menu-icon {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .header__hidden__list {
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .header__hidden__item {
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1695,6 +1769,21 @@ header {
 @media only screen and (max-width: 1551px) {
   .cards {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 638px) {
+  .cards {
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .client__card {
+    width: 270px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

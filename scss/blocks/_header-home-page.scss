@@ -26,6 +26,57 @@ header {
   align-items: center;
 }
 
+//HEADER HIDDEN MENU
+
+.header__hidden-section {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+  background-color: $color-secondary-back;
+  transform: translateY(-200px);
+  transition: all .3s ease;
+  padding: 20px 0;
+
+  &.active {
+    transform: translateY(70px);
+  }
+}
+
+
+.header__hidden-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.header__hidden-button:active svg {
+  fill: #fcde6c;
+}
+
+.header__hidden__list {
+  @include list-unstyled;
+  // padding-top: 90px;
+  // padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header__hidden__item~.header__hidden__item {
+  margin-left: 30px;
+}
+
+.header__hidden__link {
+  @include site-font-family;
+  @include link-unstyled;
+  color: $color-primary-text;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+
 .site-logo {
   @include site-logo;
   @include site-font-family;
@@ -49,7 +100,7 @@ header {
   text-transform: uppercase;
 }
 
-.header__item ~ .header__item {
+.header__item~.header__item {
   margin-left: 36px;
 }
 
@@ -68,6 +119,7 @@ header {
 .header__menu-icon {
   display: none;
   position: relative;
+  cursor: pointer;
   top: 3px;
 }
 
@@ -92,14 +144,14 @@ header {
 }
 
 @include breakpoint-down (940px) {
-  .header__item ~ .header__item {
+  .header__item~.header__item {
     margin-left: 24px;
     color: red;
   }
 }
 
 @include breakpoint-down (790px) {
-  .header__item ~ .header__item {
+  .header__item~.header__item {
     margin-left: 12px;
   }
 }
@@ -107,7 +159,7 @@ header {
 @include breakpoint-down (720px) {
   .header__item {
     font-size: 14px;
-  } 
+  }
 }
 
 @include breakpoint-down (660px) {
@@ -117,5 +169,22 @@ header {
 
   .header__menu-icon {
     display: block;
+  }
+}
+
+@include breakpoint-down (390px) {
+
+  .header__hidden__list {
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .header__hidden__item {
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

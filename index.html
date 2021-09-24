@@ -30,14 +30,29 @@
             <li class="header__item"><a class="header__link" href="index-contact.html">Contact</a></li>
           </ul>
           <div class="header__menu-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 0 24 24" width="32px" fill="#ffffff">
-              <path d="M0 0h24v24H0V0z" fill="none" />
-              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
+            <button type="button" id="toggleMenuBtn" class="header__hidden-button">
+              <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 0 24 24" width="32px" fill="#ffffff">
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
+            </button>
           </div>
         </div>
       </div>
     </div>
   </header>
+
+  <div class="header__hidden-section active" id="hiddenMenu">
+    <div class="header__hidden-menu container">
+      <ul class="header__hidden__list">
+        <li class="header__hidden__item"><a class="header__hidden__link header__hidden__link-active" href="index.html">Home</a></li>
+        <li class="header__hidden__item"><a class="header__hidden__link" href="index-about.html">About</a></li>
+        <li class="header__hidden__item"><a class="header__hidden__link" href="news.html">News</a></li>
+        <li class="header__hidden__item"><a class="header__hidden__link" href="service.html">Service</a></li>
+        <li class="header__hidden__item"><a class="header__hidden__link" href="index-contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
 
   <!-- ====== HEADER SECTION ====== -->
 
@@ -252,136 +267,6 @@
   <!--====== IMAGES SECTION =======-->
 
 
-  <!-- CLIENT -->
-
-  <div class="client-section-wrapper">
-    <div class="container">
-      <div class="client-section client">
-        <h2 class="client__title">Client's Reviews</h2>
-        <p class="client__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, optio?</p>
-        <ul class="cards">
-          <li>
-            <a href="#" class="card">
-              <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
-              <div class="card__overlay">
-                <div class="card__header">
-                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                    <path /></svg>
-                  <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                  <div class="card__header-text">
-                    <h3 class="card__title">Jessica Parker</h3>
-                    <span class="card__status">1 hour ago</span>
-                  </div>
-                </div>
-                <div class="client__marks">
-
-                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#f1f1f1"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
-
-                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#f1f1f1"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
-
-                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#f1f1f1"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
-
-                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#f1f1f1"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
-
-                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#f1f1f1"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
-
-                </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="card">
-              <img src="https://i.imgur.com/2DhmtJ4.jpg" class="card__image" alt="" />
-              <div class="card__overlay">
-                <div class="card__header">
-                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                    <path /></svg>
-                  <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
-                  <div class="card__header-text">
-                    <h3 class="card__title">kim Cattrall</h3>
-                    <span class="card__status">3 hours ago</span>
-                  </div>
-                </div>
-                <div class="client__marks">
-
-                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#f1f1f1"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
-
-                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#f1f1f1"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
-
-                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#f1f1f1"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
-
-                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#f1f1f1"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
-
-                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#f1f1f1"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
-
-                </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="card">
-              <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
-              <div class="card__overlay">
-                <div class="card__header">
-                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                    <path /></svg>
-                  <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                  <div class="card__header-text">
-                    <h3 class="card__title">Jessica Parker</h3>
-                    <span class="card__status">1 hour ago</span>
-                  </div>
-                </div>
-                <div class="client__marks">
-
-                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#f1f1f1"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
-
-                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#f1f1f1"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
-
-                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#f1f1f1"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
-
-                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#f1f1f1"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
-                  
-                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#f1f1f1"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
-
-                </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="card">
-              <img src="https://i.imgur.com/2DhmtJ4.jpg" class="card__image" alt="" />
-              <div class="card__overlay">
-                <div class="card__header">
-                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                    <path /></svg>
-                  <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
-                  <div class="card__header-text">
-                    <h3 class="card__title">kim Cattrall</h3>
-                    <span class="card__status">3 hours ago</span>
-                  </div>
-                </div>
-                <div class="client__marks">
-                 
-                  <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#f1f1f1"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
-
-                  <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#f1f1f1"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
- 
-                  <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#f1f1f1"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
- 
-                  <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#f1f1f1"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
-                   
-                  <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#f1f1f1"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
- 
-                </div>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- ===== CLIENT ====== -->
 
   <!-- BONUS SECCTION -->
   
@@ -571,6 +456,10 @@
   </footer>
 
   <!-- ====== FOOTER ====== -->
+
+ <script src="./js/main.js">
+
+</script>
 </body>
 
 </html>
