@@ -179,6 +179,8 @@ header {
 
   .header__hidden-section  {
     display: block;
+    position: fixed;
+    width: 100%;
   }
 }
 
